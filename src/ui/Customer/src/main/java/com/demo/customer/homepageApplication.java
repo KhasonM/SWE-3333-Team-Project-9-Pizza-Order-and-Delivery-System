@@ -7,10 +7,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class LoginApplication extends Application {
+public class homepageApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("Login-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(homepageApplication.class.getResource("homepage-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Mom & Pop's Pizzaria");
         stage.setScene(scene);

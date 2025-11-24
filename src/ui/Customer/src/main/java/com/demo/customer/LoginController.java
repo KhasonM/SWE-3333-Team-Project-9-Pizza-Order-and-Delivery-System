@@ -16,6 +16,7 @@ import java.io.IOException;
 
 
 public class LoginController {
+    int count = 4;
     //login stuff
     @FXML
     private TextField enterPhonenumber;
@@ -39,7 +40,11 @@ public class LoginController {
     private Button submitLogin;
     @FXML
     private Button visitCreatAccountPage;
-    int count = 4;
+    @FXML
+    private Button visitHomePage;
+    @FXML
+    private Button visitPrevousPage;
+
 
     @FXML
     protected void visitSignupPage(ActionEvent event){
@@ -51,7 +56,25 @@ public class LoginController {
 
             Scene singUpScene = new Scene(signUproot);
             stage.setScene(singUpScene);
-            stage.setTitle("Sign Up");
+            stage.setTitle("Mom & Pop's Pizzaria");
+            stage.show();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+
+
+    }
+    @FXML
+    protected void visitHomepage(ActionEvent event){
+        try{
+            FXMLLoader loader = new FXMLLoader((getClass().getResource("homepage-view.fxml")));
+            Parent homepageroot = loader.load();
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+            Scene homepageScene = new Scene(homepageroot);
+            stage.setScene(homepageScene);
+            stage.setTitle("Mom & Pop's Pizzaria");
             stage.show();
         } catch (IOException e){
             e.printStackTrace();
