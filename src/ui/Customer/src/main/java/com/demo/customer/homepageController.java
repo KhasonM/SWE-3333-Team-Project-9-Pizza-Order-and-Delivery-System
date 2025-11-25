@@ -32,6 +32,8 @@ public class homepageController {
     private Button visitSpecialsPage;
     @FXML
     private Button vistitOrderPage;
+    @FXML
+    private Button visitPreviousPage;
 
 
     @FXML
