@@ -1,4 +1,4 @@
-package com.demo.customer;
+package com.stackunderflow.pizzasystem.ui.customer;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
