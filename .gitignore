@@ -1,0 +1,16 @@
+# MS Access
+*.laccdb
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Build artifacts (Java/C#)
+bin/
+obj/
+target/
+*.class
+*.jar
+*.war
+/out/
